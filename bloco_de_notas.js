@@ -5,7 +5,9 @@ let org = document.querySelector(".org")
 let memoria_nome_notas = []
 let memoria_autor_notas = []
 
+
 adicionar_notas.addEventListener("click", () => {
+    
     let apresentaçao_nota = document.createElement("div")
     let titulo1_nota = document.createElement("h1")
     let campo1_nota = document.createElement("input")
@@ -72,8 +74,8 @@ adicionar_notas.addEventListener("click", () => {
             base_nota.appendChild(sair_nota)
             base_nota.appendChild(guardar_nota)
             base_nota.appendChild(escrita_campo_nota)
-
-
+            window.scroll(10,650)
+          
             let nota_salva = document.createElement("div")
             let nome_nota_salva = document.createElement("p")
             let autor_nota_salva = document.createElement("p")
@@ -87,6 +89,7 @@ adicionar_notas.addEventListener("click", () => {
             nota_salva.appendChild(autor_nota_salva)
 
             sair_nota.addEventListener("click", () => {
+                window.scroll(10,0)
                 let salvar_aviso = document.createElement("div")
                 let texto_salvar_aviso = document.createElement("p")
                 let botao_s_salvar_aviso = document.createElement("button")
